@@ -1161,7 +1161,7 @@ response_components: jsPsych.timelineVariable("response_components"),
   
 
 
-    const test_stimuli_Consentimiento = [{components: [{ type: "HtmlComponent", coordinates: {"x":0.008474576271186418,"y":-0.3898305084745763}, width: 200, height: 50, zIndex: 0, name: "Consentimiento", stimulus: "<div id=\"iokk\" style=\"box-sizing: border-box;\">Consentimiento</div>" }],
+    const test_stimuli_Consentimiento = [{components: [{ type: "HtmlComponent", coordinates: {"x":0.008474576271186418,"y":-0.3898305084745763}, width: 200, height: 50, zIndex: 0, name: "Consientes???", stimulus: "<div id=\"iokk\" style=\"box-sizing: border-box;\">Consientes??</div>" }],
 response_components: [{ type: "ButtonResponseComponent", coordinates: {"x":0.016949152542372614,"y":-1.4802973661668753e-16}, width: 200, height: 50, zIndex: 0, name: "Consentirá?", choices: ["Consiento", "Desconsiento"], button_html: (choice, choice_index) => {
   const templates = ["<button id=\"iwq3\" style=\"box-sizing: border-box; padding: 10px 20px; border-radius: 6px; background: #3b82f6; color: white; border: none; font-weight: 600; cursor: pointer;\">Consiento</button>","<button id=\"i8cr\" style=\"box-sizing: border-box; padding: 10px 20px; border-radius: 6px; background: #10b981; color: white; border: none; font-weight: 600; cursor: pointer;\">Desconsiento</button>"];
   return templates[choice_index] || templates[0];
@@ -1585,10 +1585,10 @@ response_components: []}];
   
 
 
-    const test_stimuli_Desconsintió = [{components: [],
+    const test_stimuli_Desconsintió = [{components: [{ type: "HtmlComponent", coordinates: {"x":0,"y":0}, width: 200, height: 50, name: "HtmlComponent_1", stimulus: "<div id=\"ibx1\" style=\"box-sizing: border-box;\">tú te lo pierdes :p</div>" }],
 response_components: []}];
     const Desconsintió_timeline = {
-    type: DynamicPlugin, 
+    type: DynamicPlugin, components: jsPsych.timelineVariable("components"),
       data: {
         rt: "rt",
         trial_id: 1771529998542,
